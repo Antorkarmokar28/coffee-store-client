@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'form-pattern': "url('./src/assets/images/more/11.png')"
+      },
+      fontFamily: {
+        Rancho: '"Rancho", cursive',
+      }
+    },
   },
   plugins: [
     require('daisyui'),
