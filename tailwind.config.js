@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'form-pattern': "url('./src/assets/images/more/11.png')"
+        'form-pattern': "url('./src/assets/images/more/11.png')",
+        'coffee-pattern': 'url("./src/assets/images/more/1.png")'
       },
       fontFamily: {
         Rancho: '"Rancho", cursive',

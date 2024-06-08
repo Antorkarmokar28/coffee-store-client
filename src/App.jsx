@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 function App() {
   const handleCoffeAdd = e => {
     e.preventDefault();
@@ -31,7 +31,16 @@ function App() {
     })
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      console.log(data)
+      if(data.acknowledged){
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          text: "Coffee added successfully",
+          footer: '<a href="#">Why do I have this issue?</a>'
+        });
+        form.reset();
+      }
     })
   }
   return (
